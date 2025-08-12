@@ -29,17 +29,10 @@ SUCCESS = 93
 ERROR = 94
 NONE = 95
 
-sevenzip = os.environ.get("7z")
-if not sevenzip:
-    print("ERROR: The '7z' environment variable is not set.")
-    sys.exit(1)
-
-unrar = os.environ.get("unrar")
-if not unrar:
-    print("ERROR: The 'unrar' environment variable is not set.")
-    sys.exit(1)
-
+sevenzip = os.environ.get("7z", "7z")
 sevenzip_cmd = sevenzip + " e -aos"
+
+unrar = os.environ.get("unrar", "unrar")
 unrar_cmd = unrar + " e -idp -ai -o-"
 
 root = dirname(__file__)
