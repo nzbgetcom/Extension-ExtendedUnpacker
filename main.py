@@ -48,7 +48,9 @@ required_options = (
     "NZBOP_UNRARCMD",
     "NZBOP_SEVENZIPCMD",
     "NZBPO_UNRARCMD",
+    "NZBPO_UNRARARGS",
     "NZBPO_SEVENZIPCMD",
+    "NZBPO_SEVENZIPARGS",
     "NZBPO_WAITTIME",
     "NZBPO_DELETELEFTOVER",
 )
@@ -67,11 +69,15 @@ if os.environ["NZBOP_UNPACK"] != "yes":
 
 sevenzipcmd = os.environ["NZBPO_SEVENZIPCMD"]
 unrarcmd = os.environ["NZBPO_UNRARCMD"]
+sevenzip_args = os.environ["NZBPO_SEVENZIPARGS"]
+unrar_args = os.environ["NZBPO_UNRARARGS"]
 waittime = os.environ["NZBPO_WAITTIME"]
 deleteleftover = os.environ["NZBPO_DELETELEFTOVER"]
 
 if sevenzipcmd == "":
-    print("[DETAIL] SevenZipCmd setting is blank. Using default NZBGet SevenZipCmd setting")
+    print(
+        "[DETAIL] SevenZipCmd setting is blank. Using default NZBGet SevenZipCmd setting"
+    )
     sevenzipcmd = os.environ["NZBOP_SEVENZIPCMD"]
 
 if unrarcmd == "":
@@ -110,13 +116,18 @@ sys.stdout.flush()
 def get_full_path(dir, filename):
     return os.path.join(dir, filename)
 
+
 def is_rar(filePath):
     _, fileExtension = os.path.splitext(filePath)
     return re.match(r"\.rar|\.r\d{2,3}$", fileExtension, re.IGNORECASE) is not None
 
+
 def is_archive(filePath):
     _, fileExtension = os.path.splitext(filePath)
-    return re.match(r"\.zip|\.z\d{2,3}|\.rar|\.r\d{2,3}$", fileExtension, re.IGNORECASE) is not None
+    return (
+        re.match(r"\.zip|\.z\d{2,3}|\.rar|\.r\d{2,3}$", fileExtension, re.IGNORECASE)
+        is not None
+    )
 
 
 status = 0
@@ -132,10 +143,13 @@ def unpack_recursively():
     archives = list()
     for dirpath, _, filenames in os.walk(working_dir):
         paths = map(lambda filename: get_full_path(dirpath, filename), filenames)
-        found_files = [file for file in paths if is_archive(file) and file not in extracted]
+        found_files = [
+            file for file in paths if is_archive(file) and file not in extracted
+        ]
         archives.extend(found_files)
 
     if len(archives) == 0:
+        print("[INFO] No archive files found.")
         extract = 1
         return
 
@@ -144,9 +158,11 @@ def unpack_recursively():
         sys.stdout.flush()
 
         if is_rar(file):
-            cmd = unrarcmd + ' "' + file + '" "' + working_dir + '"'
+            cmd = f'"{unrarcmd}" {unrar_args} "{file}" "{working_dir}"'
         else:
-            cmd = sevenzipcmd + ' "' + file + '" -o"' + working_dir + '"'
+            cmd = f'"{sevenzipcmd}" {sevenzip_args} "{file}" -o"{working_dir}"'
+
+        print(f"[INFO] Executing command: {cmd}")
 
         try:
             retcode = subprocess.call(cmd, shell=True)
@@ -181,7 +197,6 @@ if extract == 1 and deleteleftover == "yes":
             print("[ERROR] Delete failed: %s" % e)
             print("[ERROR] Unable to delete %s" % file)
             status = 1
-
 
 
 if status == 0:

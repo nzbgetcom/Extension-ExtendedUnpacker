@@ -19,24 +19,57 @@
     {
       "name": "UnrarCmd",
       "displayName": "UnrarCmd",
-      "value": "unrar e -idp -ai -o-",
+      "value": "",
       "description": [
-        "Full path to unrar executable.",
+        "The command name or full path to the unrar executable.",
         "If blank, NZBGet \"UnrarCmd\" setting is used.",
-        "Ensure Unrar is in your system’s PATH (e.g., 'unrar' on POSIX or 'unrar.exe' on Windows). Otherwise, specify the full path to the Unrar executable.",
-        "Default: unrar e -idp -ai -o-"
+        "1. If unrar is in your system's PATH, just use its name (e.g., 'unrar' or 'unrar.exe').",
+        "2. Otherwise, provide the full, absolute path.",
+        "Examples:",
+        "  - Windows: C:\\Program Files\\NZBGet\\unrar.exe",
+        "  - Linux: /usr/bin/unrar",
+        "If blank, NZBGet \"UnrarCmd\" setting is used.",
+        "",
+        "Default: blank"
+      ],
+      "select": []
+    },
+    {
+      "name": "UnrarArgs",
+      "displayName": "UnrarArgs",
+      "value": "e -idp -ai -o-",
+      "description": [
+        "The static command-line arguments to pass to unrar.",
+        "",
+        "Default: e -idp -ai -o-"
       ],
       "select": []
     },
     {
       "name": "SevenZipCmd",
       "displayName": "SevenZipCmd",
-      "value": "7z e -aos",
+      "value": "",
       "description": [
-        "Full path to 7z executable.",
+        "The command name or full path to the 7-Zip executable.",
+        "1. If 7-Zip is in your system's PATH, use its name (e.g., '7z' or '7z.exe').",
+        "2. Otherwise, provide the full, absolute path.",
+        "Examples:",
+        "  - Windows: C:\\Program Files\\NZBGet\\7z.exe",
+        "  - Linux: /usr/bin/7z",
         "If blank, NZBGet \"SevenZipCmd\" setting is used.",
-        "Ensure 7-Zip is in your system’s PATH (e.g., '7z' on POSIX or '7z.exe' on Windows). Otherwise, specify the full path to the 7-Zip executable.",
-        "Default: 7z e -aos"
+        "",
+        "Default: blank"
+      ],
+      "select": []
+    },
+    {
+      "name": "SevenZipArgs",
+      "displayName": "SevenZipArgs",
+      "value": "e -aos",
+      "description": [
+        "The static command-line arguments to pass to 7-Zip.",
+        "",
+        "Default: e -aos"
       ],
       "select": []
     },
