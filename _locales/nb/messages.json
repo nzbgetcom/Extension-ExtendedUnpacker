@@ -1,0 +1,11 @@
+{
+  "about": "Pakker ut nestede zip- og rar-arkiver.",
+  "deleteleftover_desc": "Slett gjenværende arkivfiler etter vellykket utpakking.",
+  "description": "Dette skriptet pakker ut nestede zip- og rar-arkiver fra nedlastede filer.",
+  "requirements": "Dette skriptet krever at Python 3.8.0+ er installert på systemet ditt.",
+  "sevenzipargs_desc": "De statiske kommandolinjeargumentene som sendes til 7-Zip.\n\nStandard: e -aos",
+  "sevenzipcmd_desc": "Kommandonavnet eller full sti til 7-Zip-kjørfilen.\n1. Hvis 7-Zip er i systemets PATH, bruk navnet (f.eks. '7z' eller '7z.exe').\n2. Ellers oppgi full, absolutt sti.\nEksempler:\n  - Windows: C:\\Program Files\\NZBGet\\7z.exe\n  - Linux: /usr/bin/7z\nHvis tomt, brukes NZBGet-innstillingen \"SevenZipCmd\".\n\nStandard: tomt",
+  "unrarargs_desc": "De statiske kommandolinjeargumentene som sendes til unrar.\n\nStandard: e -idp -ai -o-",
+  "unrarcmd_desc": "Kommandonavnet eller full sti til unrar-kjørfilen.\n1. Hvis unrar er i systemets PATH, bruk bare navnet (f.eks. 'unrar' eller 'unrar.exe').\n2. Ellers oppgi full, absolutt sti.\nEksempler:\n  - Windows: C:\\Program Files\\NZBGet\\unrar.exe\n  - Linux: /usr/bin/unrar\nHvis tomt, brukes NZBGet-innstillingen \"UnrarCmd\".\n\nStandard: tomt",
+  "waittime_desc": "Tid (i sekunder) for å pause starten av skriptet.\n(Gir NZBGet tid til å utføre \"UnpackCleanupDisk\"-handlingen på trege systemer).\n\nStandard: 0"
+}

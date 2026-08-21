@@ -1,0 +1,11 @@
+{
+  "about": "Packar upp kapslade zip- och rar-arkiv.",
+  "deleteleftover_desc": "Ta bort överblivna arkivfiler efter lyckad extrahering.",
+  "description": "Det här skriptet extraherar kapslade zip- och rar-arkiv från nedladdade filer.",
+  "requirements": "Det här skriptet kräver att Python 3.8.0+ är installerat på ditt system.",
+  "sevenzipargs_desc": "De statiska kommandoradsargumenten som skickas till 7-Zip.\n\nStandard: e -aos",
+  "sevenzipcmd_desc": "Kommandonamnet eller den fullständiga sökvägen till 7-Zip-programmet.\n1. Om 7-Zip finns i systemets PATH, använd dess namn (t.ex. '7z' eller '7z.exe').\n2. Annars, ange den fullständiga, absoluta sökvägen.\nExempel:\n  - Windows: C:\\Program Files\\NZBGet\\7z.exe\n  - Linux: /usr/bin/7z\nOm tomt används NZBGet-inställningen \"SevenZipCmd\".\n\nStandard: tomt",
+  "unrarargs_desc": "De statiska kommandoradsargumenten som skickas till unrar.\n\nStandard: e -idp -ai -o-",
+  "unrarcmd_desc": "Kommandonamnet eller den fullständiga sökvägen till unrar-programmet.\n1. Om unrar finns i systemets PATH, använd bara dess namn (t.ex. 'unrar' eller 'unrar.exe').\n2. Annars, ange den fullständiga, absoluta sökvägen.\nExempel:\n  - Windows: C:\\Program Files\\NZBGet\\unrar.exe\n  - Linux: /usr/bin/unrar\nOm tomt används NZBGet-inställningen \"UnrarCmd\".\n\nStandard: tomt",
+  "waittime_desc": "Tid (i sekunder) att pausa starten av skriptet.\n(Ger NZBGet tid att utföra åtgärden \"UnpackCleanupDisk\" på långsamma system).\n\nStandard: 0"
+}

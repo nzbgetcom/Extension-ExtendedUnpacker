@@ -1,0 +1,11 @@
+{
+  "about": "Rozbaluje vnořené archivy zip a rar.",
+  "deleteleftover_desc": "Po úspěšné extrakci smazat zbývající soubory archivu.",
+  "description": "Tento skript extrahuje vnořené archivy zip a rar ze stažených souborů.",
+  "requirements": "Tento skript vyžaduje instalaci Python 3.8.0+ ve vašem systému.",
+  "sevenzipargs_desc": "Statické argumenty příkazového řádku předávané programu 7-Zip.\n\nVýchozí: e -aos",
+  "sevenzipcmd_desc": "Název příkazu nebo úplná cesta ke spustitelnému souboru 7-Zip.\n1. Pokud je 7-Zip v systémové proměnné PATH, použijte jeho název (např. '7z' nebo '7z.exe').\n2. V opačném případě zadejte úplnou, absolutní cestu.\nPříklady:\n  - Windows: C:\\Program Files\\NZBGet\\7z.exe\n  - Linux: /usr/bin/7z\nPokud je prázdné, použije se nastavení NZBGet \"SevenZipCmd\".\n\nVýchozí: prázdné",
+  "unrarargs_desc": "Statické argumenty příkazového řádku předávané programu unrar.\n\nVýchozí: e -idp -ai -o-",
+  "unrarcmd_desc": "Název příkazu nebo úplná cesta ke spustitelnému souboru unrar.\n1. Pokud je unrar v systémové proměnné PATH, použijte pouze jeho název (např. 'unrar' nebo 'unrar.exe').\n2. V opačném případě zadejte úplnou, absolutní cestu.\nPříklady:\n  - Windows: C:\\Program Files\\NZBGet\\unrar.exe\n  - Linux: /usr/bin/unrar\nPokud je prázdné, použije se nastavení NZBGet \"UnrarCmd\".\n\nVýchozí: prázdné",
+  "waittime_desc": "Čas (v sekundách) pro pozastavení spuštění skriptu.\n(Poskytuje NZBGet čas na provedení akce \"UnpackCleanupDisk\" na pomalých systémech).\n\nVýchozí: 0"
+}

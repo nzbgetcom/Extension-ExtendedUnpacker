@@ -4,7 +4,7 @@
   "homepage": "https://github.com/nzbgetcom/Extension-ExtendedUnpacker",
   "kind": "POST-PROCESSING",
   "displayName": "Extended Unpacker",
-  "version": "1.0",
+  "version": "1.1",
   "author": "piejanssens,thorli",
   "license": "GNU",
   "about": "Unpacks nested zip and rar archives.",

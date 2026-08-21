@@ -1,0 +1,11 @@
+{
+  "about": "Entpackt verschachtelte ZIP- und RAR-Archive.",
+  "deleteleftover_desc": "Verbleibende Archivdateien nach erfolgreichem Entpacken löschen.",
+  "description": "Dieses Skript extrahiert verschachtelte ZIP- und RAR-Archive aus heruntergeladenen Dateien.",
+  "requirements": "Dieses Skript erfordert Python 3.8.0+ auf Ihrem System.",
+  "sevenzipargs_desc": "Die statischen Befehlszeilenargumente, die an 7-Zip übergeben werden.\n\nStandard: e -aos",
+  "sevenzipcmd_desc": "Der Befehlsname oder der vollständige Pfad zur 7-Zip-Programmdatei.\n1. Wenn 7-Zip im PATH Ihres Systems vorhanden ist, verwenden Sie den Namen (z. B. '7z' oder '7z.exe').\n2. Andernfalls geben Sie den vollständigen, absoluten Pfad an.\nBeispiele:\n  - Windows: C:\\Program Files\\NZBGet\\7z.exe\n  - Linux: /usr/bin/7z\nWenn leer, wird die NZBGet-Einstellung \"SevenZipCmd\" verwendet.\n\nStandard: leer",
+  "unrarargs_desc": "Die statischen Befehlszeilenargumente, die an unrar übergeben werden.\n\nStandard: e -idp -ai -o-",
+  "unrarcmd_desc": "Der Befehlsname oder der vollständige Pfad zur unrar-Programmdatei.\n1. Wenn unrar im PATH Ihres Systems vorhanden ist, verwenden Sie einfach den Namen (z. B. 'unrar' oder 'unrar.exe').\n2. Andernfalls geben Sie den vollständigen, absoluten Pfad an.\nBeispiele:\n  - Windows: C:\\Program Files\\NZBGet\\unrar.exe\n  - Linux: /usr/bin/unrar\nWenn leer, wird die NZBGet-Einstellung \"UnrarCmd\" verwendet.\n\nStandard: leer",
+  "waittime_desc": "Zeit (in Sekunden), um den Start des Skripts zu verzögern.\n(Gibt NZBGet Zeit, die Aktion \"UnpackCleanupDisk\" auf langsamen Systemen auszuführen).\n\nStandard: 0"
+}
