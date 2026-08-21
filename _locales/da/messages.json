@@ -1,0 +1,11 @@
+{
+  "about": "Udpakker indlejrede zip- og rar-arkiver.",
+  "deleteleftover_desc": "Slet resterende arkivfiler efter vellykket udpakning.",
+  "description": "Dette script udtrækker indlejrede zip- og rar-arkiver fra downloadede filer.",
+  "requirements": "Dette script kræver, at Python 3.8.0+ er installeret på dit system.",
+  "sevenzipargs_desc": "De statiske kommandolinjeargumenter, der skal sendes til 7-Zip.\n\nStandard: e -aos",
+  "sevenzipcmd_desc": "Kommandonavnet eller den fulde sti til 7-Zip-programmet.\n1. Hvis 7-Zip er i dit systems PATH, skal du bruge dets navn (f.eks. '7z' eller '7z.exe').\n2. Ellers skal du angive den fulde, absolutte sti.\nEksempler:\n  - Windows: C:\\Program Files\\NZBGet\\7z.exe\n  - Linux: /usr/bin/7z\nHvis tomt, bruges NZBGet-indstillingen \"SevenZipCmd\".\n\nStandard: tomt",
+  "unrarargs_desc": "De statiske kommandolinjeargumenter, der skal sendes til unrar.\n\nStandard: e -idp -ai -o-",
+  "unrarcmd_desc": "Kommandonavnet eller den fulde sti til unrar-programmet.\n1. Hvis unrar er i dit systems PATH, skal du blot bruge dets navn (f.eks. 'unrar' eller 'unrar.exe').\n2. Ellers skal du angive den fulde, absolutte sti.\nEksempler:\n  - Windows: C:\\Program Files\\NZBGet\\unrar.exe\n  - Linux: /usr/bin/unrar\nHvis tomt, bruges NZBGet-indstillingen \"UnrarCmd\".\n\nStandard: tomt",
+  "waittime_desc": "Tid (i sekunder) til at sætte scriptets start på pause.\n(Giver NZBGet tid til at udføre \"UnpackCleanupDisk\"-handlingen på langsomme systemer).\n\nStandard: 0"
+}

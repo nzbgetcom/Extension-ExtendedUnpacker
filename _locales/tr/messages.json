@@ -1,0 +1,11 @@
+{
+  "about": "İç içe zip ve rar arşivlerini açar.",
+  "deleteleftover_desc": "Başarılı çıkarma işleminin ardından kalan arşiv dosyalarını sil.",
+  "description": "Bu betik, indirilen dosyalardan iç içe zip ve rar arşivlerini çıkarır.",
+  "requirements": "Bu betik, sisteminizde Python 3.8.0+ kurulu olmasını gerektirir.",
+  "sevenzipargs_desc": "7-Zip'e iletilecek sabit komut satırı argümanları.\n\nVarsayılan: e -aos",
+  "sevenzipcmd_desc": "7-Zip çalıştırılabilir dosyasının komut adı veya tam yolu.\n1. Eğer 7-Zip sisteminizin PATH'inde ise, adını kullanın (örn. '7z' veya '7z.exe').\n2. Aksi takdirde, tam ve mutlak yolu belirtin.\nÖrnekler:\n  - Windows: C:\\Program Files\\NZBGet\\7z.exe\n  - Linux: /usr/bin/7z\nBoş bırakılırsa, NZBGet \"SevenZipCmd\" ayarı kullanılır.\n\nVarsayılan: boş",
+  "unrarargs_desc": "unrar'a iletilecek sabit komut satırı argümanları.\n\nVarsayılan: e -idp -ai -o-",
+  "unrarcmd_desc": "unrar çalıştırılabilir dosyasının komut adı veya tam yolu.\n1. Eğer unrar sisteminizin PATH'inde ise, sadece adını kullanın (örn. 'unrar' veya 'unrar.exe').\n2. Aksi takdirde, tam ve mutlak yolu belirtin.\nÖrnekler:\n  - Windows: C:\\Program Files\\NZBGet\\unrar.exe\n  - Linux: /usr/bin/unrar\nBoş bırakılırsa, NZBGet \"UnrarCmd\" ayarı kullanılır.\n\nVarsayılan: boş",
+  "waittime_desc": "Betiğin başlamasını duraklatma süresi (saniye cinsinden).\n(NZBGet'e yavaş sistemlerde \"UnpackCleanupDisk\" işlemini gerçekleştirmesi için zaman tanır).\n\nVarsayılan: 0"
+}

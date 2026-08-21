@@ -1,0 +1,11 @@
+{
+  "about": "Pakt geneste zip- en rar-archieven uit.",
+  "deleteleftover_desc": "Verwijder overgebleven archiefbestanden na een succesvolle extractie.",
+  "description": "Dit script extraheert geneste zip- en rar-archieven uit gedownloade bestanden.",
+  "requirements": "Dit script vereist dat Python 3.8.0+ op uw systeem is geïnstalleerd.",
+  "sevenzipargs_desc": "De statische opdrachtregelargumenten die aan 7-Zip worden doorgegeven.\n\nStandaard: e -aos",
+  "sevenzipcmd_desc": "De opdrachtnaam of het volledige pad naar het 7-Zip-uitvoerbare bestand.\n1. Als 7-Zip zich in het PATH van uw systeem bevindt, gebruik dan de naam (bijv. '7z' of '7z.exe').\n2. Geef anders het volledige, absolute pad op.\nVoorbeelden:\n  - Windows: C:\\Program Files\\NZBGet\\7z.exe\n  - Linux: /usr/bin/7z\nAls leeg, wordt de instelling \"SevenZipCmd\" van NZBGet gebruikt.\n\nStandaard: leeg",
+  "unrarargs_desc": "De statische opdrachtregelargumenten die aan unrar worden doorgegeven.\n\nStandaard: e -idp -ai -o-",
+  "unrarcmd_desc": "De opdrachtnaam of het volledige pad naar het unrar-uitvoerbare bestand.\n1. Als unrar zich in het PATH van uw systeem bevindt, gebruik dan gewoon de naam (bijv. 'unrar' of 'unrar.exe').\n2. Geef anders het volledige, absolute pad op.\nVoorbeelden:\n  - Windows: C:\\Program Files\\NZBGet\\unrar.exe\n  - Linux: /usr/bin/unrar\nAls leeg, wordt de instelling \"UnrarCmd\" van NZBGet gebruikt.\n\nStandaard: leeg",
+  "waittime_desc": "Tijd (in seconden) om de start van het script te pauzeren.\n(Geeft NZBGet tijd om de actie \"UnpackCleanupDisk\" uit te voeren op trage systemen).\n\nStandaard: 0"
+}

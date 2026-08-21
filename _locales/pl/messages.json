@@ -1,0 +1,11 @@
+{
+  "about": "Rozpakowuje zagnieżdżone archiwa zip i rar.",
+  "deleteleftover_desc": "Usuń pozostałe pliki archiwum po pomyślnym rozpakowaniu.",
+  "description": "Ten skrypt wyodrębnia zagnieżdżone archiwa zip i rar z pobranych plików.",
+  "requirements": "Ten skrypt wymaga zainstalowanego w systemie Python 3.8.0+.",
+  "sevenzipargs_desc": "Statyczne argumenty wiersza poleceń przekazywane do 7-Zip.\n\nDomyślnie: e -aos",
+  "sevenzipcmd_desc": "Nazwa polecenia lub pełna ścieżka do pliku wykonywalnego 7-Zip.\n1. Jeśli 7-Zip znajduje się w zmiennej PATH systemu, użyj jego nazwy (np. '7z' lub '7z.exe').\n2. W przeciwnym razie podaj pełną, bezwzględną ścieżkę.\nPrzykłady:\n  - Windows: C:\\Program Files\\NZBGet\\7z.exe\n  - Linux: /usr/bin/7z\nJeśli puste, używane jest ustawienie NZBGet \"SevenZipCmd\".\n\nDomyślnie: puste",
+  "unrarargs_desc": "Statyczne argumenty wiersza poleceń przekazywane do unrar.\n\nDomyślnie: e -idp -ai -o-",
+  "unrarcmd_desc": "Nazwa polecenia lub pełna ścieżka do pliku wykonywalnego unrar.\n1. Jeśli unrar znajduje się w zmiennej PATH systemu, użyj jego nazwy (np. 'unrar' lub 'unrar.exe').\n2. W przeciwnym razie podaj pełną, bezwzględną ścieżkę.\nPrzykłady:\n  - Windows: C:\\Program Files\\NZBGet\\unrar.exe\n  - Linux: /usr/bin/unrar\nJeśli puste, używane jest ustawienie NZBGet \"UnrarCmd\".\n\nDomyślnie: puste",
+  "waittime_desc": "Czas (w sekundach) wstrzymania uruchomienia skryptu.\n(Daje NZBGet czas na wykonanie akcji \"UnpackCleanupDisk\" na wolnych systemach).\n\nDomyślnie: 0"
+}
