@@ -22,7 +22,6 @@
       "value": "",
       "description": [
         "The command name or full path to the unrar executable.",
-        "If blank, NZBGet \"UnrarCmd\" setting is used.",
         "1. If unrar is in your system's PATH, just use its name (e.g., 'unrar' or 'unrar.exe').",
         "2. Otherwise, provide the full, absolute path.",
         "Examples:",
