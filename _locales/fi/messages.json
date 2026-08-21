@@ -1,0 +1,11 @@
+{
+  "about": "Purkaa sisäkkäiset zip- ja rar-arkistot.",
+  "deleteleftover_desc": "Poista jäljelle jääneet arkistotiedostot onnistuneen purkamisen jälkeen.",
+  "description": "Tämä skripti purkaa ladatuista tiedostoista sisäkkäiset zip- ja rar-arkistot.",
+  "requirements": "Tämä skripti vaatii Python 3.8.0+ asennettuna järjestelmääsi.",
+  "sevenzipargs_desc": "Staattiset komentoriviargumentit, jotka välitetään 7-Zipille.\n\nOletus: e -aos",
+  "sevenzipcmd_desc": "Komennon nimi tai täysi polku 7-Zip-suoritettavaan tiedostoon.\n1. Jos 7-Zip on järjestelmäsi PATH-muuttujassa, käytä sen nimeä (esim. '7z' tai '7z.exe').\n2. Muussa tapauksessa anna täysi, absoluuttinen polku.\nEsimerkkejä:\n  - Windows: C:\\Program Files\\NZBGet\\7z.exe\n  - Linux: /usr/bin/7z\nJos tyhjä, käytetään NZBGetin \"SevenZipCmd\"-asetusta.\n\nOletus: tyhjä",
+  "unrarargs_desc": "Staattiset komentoriviargumentit, jotka välitetään unrarille.\n\nOletus: e -idp -ai -o-",
+  "unrarcmd_desc": "Komennon nimi tai täysi polku unrar-suoritettavaan tiedostoon.\n1. Jos unrar on järjestelmäsi PATH-muuttujassa, käytä vain sen nimeä (esim. 'unrar' tai 'unrar.exe').\n2. Muussa tapauksessa anna täysi, absoluuttinen polku.\nEsimerkkejä:\n  - Windows: C:\\Program Files\\NZBGet\\unrar.exe\n  - Linux: /usr/bin/unrar\nJos tyhjä, käytetään NZBGetin \"UnrarCmd\"-asetusta.\n\nOletus: tyhjä",
+  "waittime_desc": "Aika (sekunteina), jonka skriptin käynnistys viivästyy.\n(Antaa NZBGetille aikaa suorittaa \"UnpackCleanupDisk\"-toiminto hitailla järjestelmillä).\n\nOletus: 0"
+}

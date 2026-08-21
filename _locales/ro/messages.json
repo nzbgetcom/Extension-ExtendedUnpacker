@@ -1,0 +1,11 @@
+{
+  "about": "Dezarhivează arhivele zip și rar imbricate.",
+  "deleteleftover_desc": "Șterge fișierele de arhivă rămase după extragerea cu succes.",
+  "description": "Acest script extrage arhivele zip și rar imbricate din fișierele descărcate.",
+  "requirements": "Acest script necesită instalarea Python 3.8.0+ pe sistemul dumneavoastră.",
+  "sevenzipargs_desc": "Argumentele statice din linia de comandă care vor fi transmise către 7-Zip.\n\nImplicit: e -aos",
+  "sevenzipcmd_desc": "Numele comenzii sau calea completă către executabilul 7-Zip.\n1. Dacă 7-Zip se află în PATH-ul sistemului, folosiți numele său (ex., '7z' sau '7z.exe').\n2. În caz contrar, furnizați calea completă, absolută.\nExemple:\n  - Windows: C:\\Program Files\\NZBGet\\7z.exe\n  - Linux: /usr/bin/7z\nDacă este gol, se utilizează setarea NZBGet \"SevenZipCmd\".\n\nImplicit: gol",
+  "unrarargs_desc": "Argumentele statice din linia de comandă care vor fi transmise către unrar.\n\nImplicit: e -idp -ai -o-",
+  "unrarcmd_desc": "Numele comenzii sau calea completă către executabilul unrar.\n1. Dacă unrar se află în PATH-ul sistemului, folosiți doar numele său (ex., 'unrar' sau 'unrar.exe').\n2. În caz contrar, furnizați calea completă, absolută.\nExemple:\n  - Windows: C:\\Program Files\\NZBGet\\unrar.exe\n  - Linux: /usr/bin/unrar\nDacă este gol, se utilizează setarea NZBGet \"UnrarCmd\".\n\nImplicit: gol",
+  "waittime_desc": "Timp (în secunde) pentru a întârzia pornirea scriptului.\n(Oferă NZBGet timp să efectueze acțiunea \"UnpackCleanupDisk\" pe sisteme lente).\n\nImplicit: 0"
+}

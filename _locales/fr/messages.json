@@ -1,0 +1,11 @@
+{
+  "about": "Décompresse les archives zip et rar imbriquées.",
+  "deleteleftover_desc": "Supprimer les fichiers d'archive résiduels après une extraction réussie.",
+  "description": "Ce script extrait les archives zip et rar imbriquées des fichiers téléchargés.",
+  "requirements": "Ce script nécessite que Python 3.8.0+ soit installé sur votre système.",
+  "sevenzipargs_desc": "Les arguments de ligne de commande statiques à passer à 7-Zip.\n\nDéfaut : e -aos",
+  "sevenzipcmd_desc": "Le nom de la commande ou le chemin complet vers l'exécutable 7-Zip.\n1. Si 7-Zip est dans le PATH de votre système, utilisez son nom (ex. : '7z' ou '7z.exe').\n2. Sinon, fournissez le chemin complet et absolu.\nExemples :\n  - Windows : C:\\Program Files\\NZBGet\\7z.exe\n  - Linux : /usr/bin/7z\nSi vide, le paramètre \"SevenZipCmd\" de NZBGet est utilisé.\n\nDéfaut : vide",
+  "unrarargs_desc": "Les arguments de ligne de commande statiques à passer à unrar.\n\nDéfaut : e -idp -ai -o-",
+  "unrarcmd_desc": "Le nom de la commande ou le chemin complet vers l'exécutable unrar.\n1. Si unrar est dans le PATH de votre système, utilisez simplement son nom (ex. : 'unrar' ou 'unrar.exe').\n2. Sinon, fournissez le chemin complet et absolu.\nExemples :\n  - Windows : C:\\Program Files\\NZBGet\\unrar.exe\n  - Linux : /usr/bin/unrar\nSi vide, le paramètre \"UnrarCmd\" de NZBGet est utilisé.\n\nDéfaut : vide",
+  "waittime_desc": "Durée (en secondes) de pause avant le démarrage du script.\n(Laisse à NZBGet le temps d'effectuer l'action \"UnpackCleanupDisk\" sur les systèmes lents).\n\nDéfaut : 0"
+}

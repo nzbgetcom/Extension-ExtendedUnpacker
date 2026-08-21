@@ -1,0 +1,38 @@
+{
+    "about": {
+        "message": "Unpacks nested zip and rar archives.",
+        "description": "Short description of the Extended Unpacker extension shown in settings."
+    },
+    "description": {
+        "message": "This script extracts nested zip and rar archives from downloaded files.",
+        "description": "Full description of the extension shown in settings."
+    },
+    "requirements": {
+        "message": "This script requires Python 3.8.0+ to be installed on your system.",
+        "description": "System requirements (each requirement is a separate string). DO NOT translate technical version strings (e.g., Python 3.8.x)."
+    },
+    "unrarcmd_desc": {
+        "message": "The command name or full path to the unrar executable.\n1. If unrar is in your system's PATH, just use its name (e.g., 'unrar' or 'unrar.exe').\n2. Otherwise, provide the full, absolute path.\nExamples:\n  - Windows: C:\\Program Files\\NZBGet\\unrar.exe\n  - Linux: /usr/bin/unrar\nIf blank, NZBGet \"UnrarCmd\" setting is used.\n\nDefault: blank",
+        "description": "Help text for the UnrarCmd option in Extended Unpacker. DO NOT translate technical or example values enclosed in quotes."
+    },
+    "unrarargs_desc": {
+        "message": "The static command-line arguments to pass to unrar.\n\nDefault: e -idp -ai -o-",
+        "description": "Help text for the UnrarArgs option in Extended Unpacker."
+    },
+    "sevenzipcmd_desc": {
+        "message": "The command name or full path to the 7-Zip executable.\n1. If 7-Zip is in your system's PATH, use its name (e.g., '7z' or '7z.exe').\n2. Otherwise, provide the full, absolute path.\nExamples:\n  - Windows: C:\\Program Files\\NZBGet\\7z.exe\n  - Linux: /usr/bin/7z\nIf blank, NZBGet \"SevenZipCmd\" setting is used.\n\nDefault: blank",
+        "description": "Help text for the SevenZipCmd option in Extended Unpacker. DO NOT translate technical or example values enclosed in quotes."
+    },
+    "sevenzipargs_desc": {
+        "message": "The static command-line arguments to pass to 7-Zip.\n\nDefault: e -aos",
+        "description": "Help text for the SevenZipArgs option in Extended Unpacker."
+    },
+    "waittime_desc": {
+        "message": "Time (in seconds) to pause start of script.\n(Gives NZBGet time to perform \"UnpackCleanupDisk\" action on slow systems).\n\nDefault: 0",
+        "description": "Help text for the WaitTime option in Extended Unpacker. DO NOT translate technical or example values enclosed in quotes."
+    },
+    "deleteleftover_desc": {
+        "message": "Delete leftover archive files after successful extract.",
+        "description": "Help text for the DeleteLeftover option in Extended Unpacker."
+    }
+}
