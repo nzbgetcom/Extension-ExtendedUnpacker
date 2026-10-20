@@ -2,6 +2,8 @@
   "about": "Desempaqueta archivos zip y rar anidados.",
   "deleteleftover_desc": "Eliminar los archivos de archivo sobrantes tras una extracción exitosa.",
   "description": "Este script extrae archivos zip y rar anidados de los archivos descargados.",
+  "maxrecursiondepth_desc": "Profundidad máxima de recursión para descomprimir archivos anidados.\nEvita la recursión infinita y los archivos bomba.\n\nPredeterminado: 10",
+  "maxtotalarchives_desc": "Número total máximo de archivos a extraer en una sola ejecución.\nEvita las bombas de descompresión con grandes cantidades de archivos anidados.\n\nPredeterminado: 100",
   "requirements": "Este script requiere que Python 3.8.0+ esté instalado en su sistema.",
   "sevenzipargs_desc": "Los argumentos de línea de comandos estáticos que se pasarán a 7-Zip.\n\nPredeterminado: e -aos",
   "sevenzipcmd_desc": "El nombre del comando o la ruta completa al ejecutable de 7-Zip.\n1. Si 7-Zip está en el PATH de su sistema, use su nombre (p. ej., '7z' o '7z.exe').\n2. De lo contrario, proporcione la ruta completa y absoluta.\nEjemplos:\n  - Windows: C:\\Program Files\\NZBGet\\7z.exe\n  - Linux: /usr/bin/7z\nSi está en blanco, se usa la configuración \"SevenZipCmd\" de NZBGet.\n\nPredeterminado: en blanco",

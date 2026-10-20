@@ -2,6 +2,8 @@
   "about": "Décompresse les archives zip et rar imbriquées.",
   "deleteleftover_desc": "Supprimer les fichiers d'archive résiduels après une extraction réussie.",
   "description": "Ce script extrait les archives zip et rar imbriquées des fichiers téléchargés.",
+  "maxrecursiondepth_desc": "Profondeur de récursion maximale pour l'extraction d'archives imbriquées.\nEmpêche la récursion infinie et les archives bombes.\n\nDéfaut : 10",
+  "maxtotalarchives_desc": "Nombre total maximum d'archives à extraire en une seule exécution.\nEmpêche les bombes de décompression avec un grand nombre de fichiers imbriqués.\n\nDéfaut : 100",
   "requirements": "Ce script nécessite que Python 3.8.0+ soit installé sur votre système.",
   "sevenzipargs_desc": "Les arguments de ligne de commande statiques à passer à 7-Zip.\n\nDéfaut : e -aos",
   "sevenzipcmd_desc": "Le nom de la commande ou le chemin complet vers l'exécutable 7-Zip.\n1. Si 7-Zip est dans le PATH de votre système, utilisez son nom (ex. : '7z' ou '7z.exe').\n2. Sinon, fournissez le chemin complet et absolu.\nExemples :\n  - Windows : C:\\Program Files\\NZBGet\\7z.exe\n  - Linux : /usr/bin/7z\nSi vide, le paramètre \"SevenZipCmd\" de NZBGet est utilisé.\n\nDéfaut : vide",

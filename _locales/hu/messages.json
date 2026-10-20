@@ -2,6 +2,8 @@
   "about": "Beágyazott zip és rar archívumokat csomagol ki.",
   "deleteleftover_desc": "Sikeres kicsomagolás után törli a maradék archívumfájlokat.",
   "description": "Ez a szkript a letöltött fájlokból beágyazott zip és rar archívumokat fejt ki.",
+  "maxrecursiondepth_desc": "Maximális rekurzió mélysége egymásba ágyazott archívumok kicsomagolásakor.\nMegakadályozza a végtelen rekurziót és a bomba archívumokat.\n\nAlapértelmezett: 10",
+  "maxtotalarchives_desc": "Egyetlen futtatás során kicsomagolandó archívumok maximális száma.\nMegakadályozza a dekompressziós bombákat nagy számú egymásba ágyazott fájl esetén.\n\nAlapértelmezett: 100",
   "requirements": "Ez a szkript Python 3.8.0+ telepítését igényli a rendszeren.",
   "sevenzipargs_desc": "A 7-Zip-nek átadandó statikus parancssori argumentumok.\n\nAlapértelmezett: e -aos",
   "sevenzipcmd_desc": "A 7-Zip futtatható fájl parancsneve vagy teljes elérési útja.\n1. Ha a 7-Zip szerepel a rendszer PATH-jában, használja a nevét (pl. '7z' vagy '7z.exe').\n2. Ellenkező esetben adja meg a teljes, abszolút elérési utat.\nPéldák:\n  - Windows: C:\\Program Files\\NZBGet\\7z.exe\n  - Linux: /usr/bin/7z\nHa üres, az NZBGet \"SevenZipCmd\" beállítása kerül felhasználásra.\n\nAlapértelmezett: üres",

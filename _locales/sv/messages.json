@@ -2,6 +2,8 @@
   "about": "Packar upp kapslade zip- och rar-arkiv.",
   "deleteleftover_desc": "Ta bort överblivna arkivfiler efter lyckad extrahering.",
   "description": "Det här skriptet extraherar kapslade zip- och rar-arkiv från nedladdade filer.",
+  "maxrecursiondepth_desc": "Maximalt rekursionsdjup för uppackning av nästlade arkiv.\nFörhindrar oändlig rekursion och bombare arkiv.\n\nStandard: 10",
+  "maxtotalarchives_desc": "Maximalt totalt antal arkiv att extrahera i en enda körning.\nFörhindrar dekomprimeringsbomber med ett stort antal nästlade filer.\n\nStandard: 100",
   "requirements": "Det här skriptet kräver att Python 3.8.0+ är installerat på ditt system.",
   "sevenzipargs_desc": "De statiska kommandoradsargumenten som skickas till 7-Zip.\n\nStandard: e -aos",
   "sevenzipcmd_desc": "Kommandonamnet eller den fullständiga sökvägen till 7-Zip-programmet.\n1. Om 7-Zip finns i systemets PATH, använd dess namn (t.ex. '7z' eller '7z.exe').\n2. Annars, ange den fullständiga, absoluta sökvägen.\nExempel:\n  - Windows: C:\\Program Files\\NZBGet\\7z.exe\n  - Linux: /usr/bin/7z\nOm tomt används NZBGet-inställningen \"SevenZipCmd\".\n\nStandard: tomt",

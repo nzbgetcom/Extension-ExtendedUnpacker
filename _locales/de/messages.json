@@ -2,6 +2,8 @@
   "about": "Entpackt verschachtelte ZIP- und RAR-Archive.",
   "deleteleftover_desc": "Verbleibende Archivdateien nach erfolgreichem Entpacken löschen.",
   "description": "Dieses Skript extrahiert verschachtelte ZIP- und RAR-Archive aus heruntergeladenen Dateien.",
+  "maxrecursiondepth_desc": "Maximale Rekursionstiefe beim Entpacken verschachtelter Archive.\nVerhindert unendliche Rekursion und Bombenarchive.\n\nStandard: 10",
+  "maxtotalarchives_desc": "Maximale Gesamtanzahl der Archive, die in einem einzigen Durchlauf extrahiert werden.\nVerhindert Dekomprimierungsbomben mit einer großen Anzahl verschachtelter Dateien.\n\nStandard: 100",
   "requirements": "Dieses Skript erfordert Python 3.8.0+ auf Ihrem System.",
   "sevenzipargs_desc": "Die statischen Befehlszeilenargumente, die an 7-Zip übergeben werden.\n\nStandard: e -aos",
   "sevenzipcmd_desc": "Der Befehlsname oder der vollständige Pfad zur 7-Zip-Programmdatei.\n1. Wenn 7-Zip im PATH Ihres Systems vorhanden ist, verwenden Sie den Namen (z. B. '7z' oder '7z.exe').\n2. Andernfalls geben Sie den vollständigen, absoluten Pfad an.\nBeispiele:\n  - Windows: C:\\Program Files\\NZBGet\\7z.exe\n  - Linux: /usr/bin/7z\nWenn leer, wird die NZBGet-Einstellung \"SevenZipCmd\" verwendet.\n\nStandard: leer",
