@@ -2,6 +2,8 @@
   "about": "Dezarhivează arhivele zip și rar imbricate.",
   "deleteleftover_desc": "Șterge fișierele de arhivă rămase după extragerea cu succes.",
   "description": "Acest script extrage arhivele zip și rar imbricate din fișierele descărcate.",
+  "maxrecursiondepth_desc": "Adâncimea maximă de recursivitate pentru dezarhivarea arhivelor imbricate.\nPrevine recursivitatea infinită și arhivele de tip bombă.\n\nImplicit: 10",
+  "maxtotalarchives_desc": "Numărul total maxim de arhive de extras într-o singură rulare.\nPrevine bombele de decompresie cu un număr mare de fișiere imbricate.\n\nImplicit: 100",
   "requirements": "Acest script necesită instalarea Python 3.8.0+ pe sistemul dumneavoastră.",
   "sevenzipargs_desc": "Argumentele statice din linia de comandă care vor fi transmise către 7-Zip.\n\nImplicit: e -aos",
   "sevenzipcmd_desc": "Numele comenzii sau calea completă către executabilul 7-Zip.\n1. Dacă 7-Zip se află în PATH-ul sistemului, folosiți numele său (ex., '7z' sau '7z.exe').\n2. În caz contrar, furnizați calea completă, absolută.\nExemple:\n  - Windows: C:\\Program Files\\NZBGet\\7z.exe\n  - Linux: /usr/bin/7z\nDacă este gol, se utilizează setarea NZBGet \"SevenZipCmd\".\n\nImplicit: gol",
