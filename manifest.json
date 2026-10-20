@@ -4,16 +4,16 @@
   "homepage": "https://github.com/nzbgetcom/Extension-ExtendedUnpacker",
   "kind": "POST-PROCESSING",
   "displayName": "Extended Unpacker",
-  "version": "1.1",
+  "version": "1.2",
   "author": "piejanssens,thorli",
   "license": "GNU",
-  "about": "Unpacks nested zip and rar archives.",
+  "about": "Unpacks nested archives (7z, zip, rar, tar, gz, bz2, xz, etc.).",
   "queueEvents": "",
   "requirements": [
     "This script requires Python 3.8.0+ to be installed on your system."
   ],
   "description": [
-    "This script extracts nested zip and rar archives from downloaded files."
+    "This script extracts nested archives (7z, zip, rar, tar, gz, bz2, xz, etc.) from downloaded files."
   ],
   "options": [
     {
@@ -92,6 +92,30 @@
         "Delete leftover archive files after successful extract."
       ],
       "select": ["yes", "no"]
+    },
+    {
+      "name": "MaxRecursionDepth",
+      "displayName": "MaxRecursionDepth",
+      "value": 10,
+      "description": [
+        "Maximum recursion depth for unpacking nested archives.",
+        "Prevents infinite recursion and bomb archives.",
+        "",
+        "Default: 10"
+      ],
+      "select": []
+    },
+    {
+      "name": "MaxTotalArchives",
+      "displayName": "MaxTotalArchives",
+      "value": 100,
+      "description": [
+        "Maximum total number of archives to extract in a single run.",
+        "Prevents decompression bombs with huge numbers of nested files.",
+        "",
+        "Default: 100"
+      ],
+      "select": []
     }
   ],
   "commands": [],

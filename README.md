@@ -5,7 +5,7 @@
 # ExtendedUnpacker
 [Post-processing](https://nzbget.com/documentation/post-processing-scripts/) script for [NZBGet](https://nzbget.com).
 
-This script extracts nested zip and rar archives from downloaded files.
+This script extracts nested archives (.7z, .zip, .rar, .tar, .gz, .bz, .bz2, .tgz, .txz, .xz, multi-volume RAR, and split ZIP) from downloaded files.
 
 ## Installation
 
