@@ -3,7 +3,7 @@
   "name": "ExtendedUnpacker",
   "homepage": "https://github.com/nzbgetcom/Extension-ExtendedUnpacker",
   "kind": "POST-PROCESSING",
-  "displayName": "Extended Unpacker",
+  "displayName": "ExtendedUnpacker",
   "version": "1.2",
   "author": "piejanssens,thorli",
   "license": "GNU",
