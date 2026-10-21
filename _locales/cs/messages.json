@@ -2,6 +2,8 @@
   "about": "Rozbaluje vnořené archivy zip a rar.",
   "deleteleftover_desc": "Po úspěšné extrakci smazat zbývající soubory archivu.",
   "description": "Tento skript extrahuje vnořené archivy zip a rar ze stažených souborů.",
+  "maxrecursiondepth_desc": "Maximální hloubka rekurze pro rozbalování vnořených archivů.\nZabraňuje nekonečné rekurzi a archivním bombám.\n\nVýchozí hodnota: 10",
+  "maxtotalarchives_desc": "Maximální celkový počet archivů k extrakci v jednom spuštění.\nZabraňuje dekompresním bombám s velkým počtem vnořených souborů.\n\nVýchozí hodnota: 100",
   "requirements": "Tento skript vyžaduje instalaci Python 3.8.0+ ve vašem systému.",
   "sevenzipargs_desc": "Statické argumenty příkazového řádku předávané programu 7-Zip.\n\nVýchozí: e -aos",
   "sevenzipcmd_desc": "Název příkazu nebo úplná cesta ke spustitelnému souboru 7-Zip.\n1. Pokud je 7-Zip v systémové proměnné PATH, použijte jeho název (např. '7z' nebo '7z.exe').\n2. V opačném případě zadejte úplnou, absolutní cestu.\nPříklady:\n  - Windows: C:\\Program Files\\NZBGet\\7z.exe\n  - Linux: /usr/bin/7z\nPokud je prázdné, použije se nastavení NZBGet \"SevenZipCmd\".\n\nVýchozí: prázdné",

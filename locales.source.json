@@ -1,10 +1,10 @@
 {
     "about": {
-        "message": "Unpacks nested zip and rar archives.",
+        "message": "Unpacks nested archives (7z, zip, rar, tar, gz, bz2, xz, etc.).",
         "description": "Short description of the Extended Unpacker extension shown in settings."
     },
     "description": {
-        "message": "This script extracts nested zip and rar archives from downloaded files.",
+        "message": "This script extracts nested archives (7z, zip, rar, tar, gz, bz2, xz, etc.) from downloaded files.",
         "description": "Full description of the extension shown in settings."
     },
     "requirements": {
@@ -34,5 +34,13 @@
     "deleteleftover_desc": {
         "message": "Delete leftover archive files after successful extract.",
         "description": "Help text for the DeleteLeftover option in Extended Unpacker."
+    },
+    "maxrecursiondepth_desc": {
+        "message": "Maximum recursion depth for unpacking nested archives.\nPrevents infinite recursion and bomb archives.\n\nDefault: 10",
+        "description": "Help text for the MaxRecursionDepth option in Extended Unpacker."
+    },
+    "maxtotalarchives_desc": {
+        "message": "Maximum total number of archives to extract in a single run.\nPrevents decompression bombs with huge numbers of nested files.\n\nDefault: 100",
+        "description": "Help text for the MaxTotalArchives option in Extended Unpacker."
     }
 }
